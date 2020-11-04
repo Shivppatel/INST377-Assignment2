@@ -1,0 +1,149 @@
+/* Style sheet sampled from:
+https://webdesign.tutsplus.com/tutorials/building-responsive-forms-with-flexbox--cms-26767
+*/
+
+body {
+  font: normal 18px/1.5 "Fira Sans", "Helvetica Neue", sans-serif;
+  background: #175cb6;
+  color: #fff;
+  padding: 50px 0;
+}
+
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container * {
+  box-sizing: border-box;
+}
+
+.flex-outer,
+.flex-inner {
+  list-style-type: none;
+  padding: 0;
+}
+
+.flex-outer {
+  margin-left: 0px;
+  max-width: 800px;
+  margin: 0;
+  padding: 0px 16px;
+}
+
+.center {
+  margin: auto;
+  width: 30%;
+  padding: 50px;
+}
+
+.flex-outer li,
+.flex-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.flex-inner {
+  padding: 0 8px;
+  justify-content: space-between;  
+}
+
+.flex-outer > li:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.flex-outer li label,
+.flex-outer li p {
+  padding: 8px;
+  font-weight: 300;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+}
+
+.flex-outer > li > label,
+.flex-outer li p {
+  flex: 1 0 125px;
+  max-width: 225px;
+}
+
+.flex-outer > li > label + *,
+.flex-inner {
+  flex: 1 0 225px;
+}
+
+.flex-outer li p {
+  margin: 0;
+}
+
+.flex-outer li input:not([type='checkbox']),
+.flex-outer li textarea {
+  margin-left: 0px;
+  padding: 15px;
+  border: none;
+}
+
+.flex-inner li button {
+  margin-left: auto;
+  padding: 8px 16px;
+  border: none;
+  background: #333;
+  color: #f2f2f2;
+  text-transform: uppercase;
+  letter-spacing: .09em;
+  border-radius: 2px;
+}
+
+.flex-inner li {
+  width: 95px;
+}
+
+/* Headers */
+
+h1 {
+  font-family: 'Baloo 2';
+  font-size: 4rem;
+  text-align: left;
+  padding: 0 20px;
+  margin: 40px 70px;
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+
+/* Media Rules*/
+@media screen and (max-width: 1600px) {
+  .profile {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1 0 auto;
+    margin-bottom: 15px;
+    margin-right: 0px;
+    align-items: center;
+  }
+  .profile p {
+    margin: 15px;
+  }
+  .header {
+    justify-content: space-evenly;
+  }
+
+  .container {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  img {
+    border: 1px;
+    border-radius: 4px;
+    border-width: 1px;
+  }
+
+  h1 {
+    font-weight: 500;
+  }
+}
