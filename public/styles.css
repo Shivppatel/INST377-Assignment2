@@ -100,9 +100,11 @@ body {
 }
 
 .flex-outer li {
-  background: #000000;
-  margin: 40px 260px;
-  padding: 12px 75px;
+  display: inline-block;
+  background: #ffffff;
+  color: #000000;
+  margin: 40px 245px;
+  padding: 12px 260px;
   
 }
 
