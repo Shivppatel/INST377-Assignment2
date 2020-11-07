@@ -14,7 +14,8 @@
     return restaurants.filter(place => {
 
         const regex = new RegExp(wordToMatch, 'gi');
-        return place.name.match(regex) || place.state.match(regex);
+        return place.name.match(regex) || place.category.match(regex) ||
+         place.state.match(regex);
 
     })
 
@@ -27,8 +28,9 @@
 
         return `
         <li>
-            <span class="name">${place.name}, ${place.state}</span>
-            <span class="zip">${place.zip}</span>
+            <span class="name">${place.name},\r\n ${place.category}, 
+            ${place.state} </span>
+            <span class="address">${place.city}, ${place.address_line_1}, ${place.zip}</span>
         <\li>
         `;
         

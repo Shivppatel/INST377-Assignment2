@@ -99,6 +99,13 @@ body {
   width: 95px;
 }
 
+.flex-outer li {
+  background: #000000;
+  margin: 40px 260px;
+  padding: 12px 75px;
+  
+}
+
 /* Headers */
 
 h1 {
@@ -111,9 +118,22 @@ h1 {
   text-decoration: underline;
 }
 
+.textinput {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: left;
+  margin-left: 100px;
+  margin: 40px 260px;
+  padding: 12px 225px;
+}
+
+/* lists */
+
+
 
 /* Media Rules*/
-@media screen and (max-width: 1600px) {
+@media screen and (min-width: 1600px) {
   .profile {
     display: flex;
     flex-direction: row;
