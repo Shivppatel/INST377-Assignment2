@@ -4,9 +4,10 @@ https://webdesign.tutsplus.com/tutorials/building-responsive-forms-with-flexbox-
 
 body {
   font: normal 18px/1.5 "Fira Sans", "Helvetica Neue", sans-serif;
-  background: #175cb6;
-  color: #fff;
+  background: #B5F090;
+  color: #3E6E21;
   padding: 50px 0;
+  text-transform: capitalize;
 }
 
 .container {
@@ -54,18 +55,25 @@ body {
   margin-bottom: 20px;
 }
 
+.flex-outer > li {
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
+  box-shadow: 2px 3px 8px #888888;
+}
+
 .flex-outer li label,
 .flex-outer li p {
-  padding: 8px;
-  font-weight: 300;
-  letter-spacing: .09em;
-  text-transform: uppercase;
+  font-style: italic;
+  padding: 5px;
+  font-weight: 200;
+  letter-spacing: .02em;
 }
 
 .flex-outer > li > label,
 .flex-outer li p {
   flex: 1 0 125px;
-  max-width: 225px;
+  max-width: 325px;
 }
 
 .flex-outer > li > label + *,
@@ -91,7 +99,7 @@ body {
   background: #333;
   color: #f2f2f2;
   text-transform: uppercase;
-  letter-spacing: .09em;
+  letter-spacing: .02em;
   border-radius: 2px;
 }
 
@@ -101,10 +109,14 @@ body {
 
 .flex-outer li {
   display: inline-block;
-  background: #ffffff;
+  background-color: #8ae9b3;
+  background-image: linear-gradient(315deg, #8ae9b3 0%, #c8d6e5 74%);
+  
+  
+  
   color: #000000;
   margin: 40px 245px;
-  padding: 12px 260px;
+  width: 500px;
   
 }
 
@@ -120,14 +132,23 @@ h1 {
   text-decoration: underline;
 }
 
+h2 {
+  font-family: 'Baloo 2';
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  text-align: left;
+  font-weight: 100;
+  margin: 5px auto;
+}
+
 .textinput {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   text-align: left;
-  margin-left: 100px;
-  margin: 40px 260px;
-  padding: 12px 225px;
+  margin: auto 260px;
+  padding: auto 0;
+  width: 335px;;
 }
 
 /* lists */
