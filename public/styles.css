@@ -124,7 +124,8 @@ h2 {
   text-align: left;
   margin: auto 260px;
   padding: auto 0;
-  width: 335px;;
+  width: 335px;
+  height: 25px;
 }
 
 /* lists */
