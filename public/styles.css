@@ -8,9 +8,10 @@ https://webdesign.tutsplus.com/tutorials/building-responsive-forms-with-flexbox-
 
 body {
   font: normal 18px/1.5 "Fira Sans", "Helvetica Neue", sans-serif;
-  background: #175cb6;
-  color: #fff;
+  background: #B5F090;
+  color: #3E6E21;
   padding: 50px 0;
+  text-transform: capitalize;
 }
 
 .container {
@@ -58,18 +59,25 @@ body {
   margin-bottom: 20px;
 }
 
+.flex-outer > li {
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
+  box-shadow: 2px 3px 8px #888888;
+}
+
 .flex-outer li label,
 .flex-outer li p {
-  padding: 8px;
-  font-weight: 300;
-  letter-spacing: .09em;
-  text-transform: uppercase;
+  font-style: italic;
+  padding: 5px;
+  font-weight: 200;
+  letter-spacing: .02em;
 }
 
 .flex-outer > li > label,
 .flex-outer li p {
   flex: 1 0 125px;
-  max-width: 225px;
+  max-width: 325px;
 }
 
 .flex-outer > li > label + *,
@@ -95,7 +103,7 @@ body {
   background: #333;
   color: #f2f2f2;
   text-transform: uppercase;
-  letter-spacing: .09em;
+  letter-spacing: .02em;
   border-radius: 2px;
 }
 
