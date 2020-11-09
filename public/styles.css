@@ -14,16 +14,6 @@ body {
   text-transform: capitalize;
 }
 
-.container {
-  width: 80%;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.container * {
-  box-sizing: border-box;
-}
-
 .flex-outer,
 .flex-inner {
   list-style-type: none;
@@ -50,10 +40,6 @@ body {
   align-items: center;
 }
 
-.flex-inner {
-  padding: 0 8px;
-  justify-content: space-between;  
-}
 
 .flex-outer > li:not(:last-child) {
   margin-bottom: 20px;
@@ -96,20 +82,6 @@ body {
   border: none;
 }
 
-.flex-inner li button {
-  margin-left: auto;
-  padding: 8px 16px;
-  border: none;
-  background: #333;
-  color: #f2f2f2;
-  text-transform: uppercase;
-  letter-spacing: .02em;
-  border-radius: 2px;
-}
-
-.flex-inner li {
-  width: 95px;
-}
 
 .flex-outer li {
   display: inline-block;
@@ -161,32 +133,13 @@ h2 {
 
 /* Media Rules*/
 @media screen and (max-width: 1000px) {
-  .profile {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    flex: 1 0 auto;
-    margin-bottom: 15px;
-    margin-right: 0px;
-    align-items: center;
-  }
-  .profile p {
-    margin: 15px;
-  }
   .header {
-    justify-content: space-evenly;
-  }
-
-  .container {
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
     justify-content: center;
   }
 
   h1 {
     font-family: 'Poiret One';
-    font-size: 4rem;
+    font-size: 3rem;
     text-align: left;
     padding: 0 20px;
     margin: 40px 30px; /* Used to be 95 */
@@ -199,13 +152,9 @@ h2 {
     display: inline-block;
     background-color: #8ae9b3;
     background-image: linear-gradient(315deg, #8ae9b3 0%, #c8d6e5 74%);
-    
-    
-    
     color: #000000;
     margin: 40px 35px; /* Used to be 100 */
-    width: 350px;
-    
+    width: 370px;
   }
 
   .textinput {
